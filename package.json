@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "latest",
@@ -15,8 +14,12 @@
     "react-dom": "latest",
     "@babylonjs/core": "latest"
   },
-  "devDependencies": {
-    "prisma": "latest",
-    "typescript": "latest"
-  }
+ "dependencies": {
+  "@prisma/client": "latest",
+  "prisma": "latest",
+  "next": "latest",
+  "react": "latest",
+  "react-dom": "latest",
+  "@babylonjs/core": "latest"
+}
 }
