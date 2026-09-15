@@ -5,21 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start"
   },
   "dependencies": {
+    "@babylonjs/core": "latest",
     "@prisma/client": "latest",
     "next": "latest",
+    "prisma": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "@babylonjs/core": "latest"
-  },
- "dependencies": {
-  "@prisma/client": "latest",
-  "prisma": "latest",
-  "next": "latest",
-  "react": "latest",
-  "react-dom": "latest",
-  "@babylonjs/core": "latest"
-}
+    "react-dom": "latest"
+  }
 }
