@@ -4,19 +4,17 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
-    "start": "next start",
-    "postinstall": "prisma generate"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "@babylonjs/core": "latest",
-    "@prisma/client": "latest",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "@babylonjs/core": "^7.0.0",
+    "@prisma/client": "^6.0.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "prisma": "latest",
-    "typescript": "latest"
+    "prisma": "^6.0.0"
   }
 }
