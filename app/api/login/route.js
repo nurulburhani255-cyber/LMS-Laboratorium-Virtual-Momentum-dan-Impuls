@@ -1,37 +1,26 @@
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
-
 export async function POST(request) {
   const body = await request.json();
 
   const { email, password } = body;
 
-  const user = await prisma.user.findUnique({
-    where: {
-      email: email
-    }
-  });
+  // Login sementara (tanpa database)
+  const akun = {
+    email: "nurulburhani255@gmail.com",
+    password: "@Nurbul255"
+  };
 
-  if (!user) {
+  if (
+    email === akun.email &&
+    password === akun.password
+  ) {
     return Response.json({
-      success: false,
-      message: "Email tidak ditemukan"
-    });
-  }
-
-  if (user.password_hash !== password) {
-    return Response.json({
-      success: false,
-      message: "Password salah"
+      success: true,
+      message: "Login berhasil"
     });
   }
 
   return Response.json({
-    success: true,
-    user: {
-      id: user.id,
-      nama: user.name
-    }
+    success: false,
+    message: "Email atau password salah"
   });
 }
