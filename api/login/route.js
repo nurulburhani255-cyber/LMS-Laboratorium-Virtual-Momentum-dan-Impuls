@@ -20,7 +20,7 @@ export async function POST(request) {
     });
   }
 
-  if (user.password !== password) {
+  if (user.password_hash !== password) {
     return Response.json({
       success: false,
       message: "Password salah"
@@ -31,8 +31,7 @@ export async function POST(request) {
     success: true,
     user: {
       id: user.id,
-      nama: user.nama,
-      role: user.role
+      nama: user.name
     }
   });
 }
