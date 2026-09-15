@@ -3,15 +3,9 @@ export async function POST(request) {
 
   const { email, password } = body;
 
-  // Login sementara (tanpa database)
-  const akun = {
-    email: "nurulburhani255@gmail.com",
-    password: "@Nurbul255"
-  };
-
   if (
-    email === akun.email &&
-    password === akun.password
+    email === "nurulburhani255@gmail.com" &&
+    password === "@Nurbul255"
   ) {
     return Response.json({
       success: true,
