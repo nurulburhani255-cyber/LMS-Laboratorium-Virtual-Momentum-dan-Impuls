@@ -1,22 +1,22 @@
 {
-  "name":"lms-laboratorium-virtual-momentum-impuls",
-  "version":"1.0.0",
-  "private":true,
-  "scripts":{
-    "dev":"next dev",
-    "build":"next build",
-    "start":"next start",
-    "postinstall":"prisma generate"
+  "name": "lms-laboratorium-virtual-momentum-impuls",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "prisma generate"
   },
-  "dependencies":{
-    "@prisma/client":"latest",
-    "next":"latest",
-    "react":"latest",
-    "react-dom":"latest",
-    "@babylonjs/core":"latest"
+  "dependencies": {
+    "@prisma/client": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "@babylonjs/core": "latest"
   },
-  "devDependencies":{
-    "prisma":"latest",
-    "typescript":"latest"
+  "devDependencies": {
+    "prisma": "latest",
+    "typescript": "latest"
   }
 }
